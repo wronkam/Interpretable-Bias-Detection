@@ -22,7 +22,7 @@ NUM_CLASSES = 1_000
 
 # These are mainly based on the recipes from
 # https://github.com/pytorch/vision/blob/93723b481d1f6e/references/classification/README.md
-DEFAULT_BATCH_SIZE = 64  # per GPU! * 4 = 256 effective
+DEFAULT_BATCH_SIZE = 16  # per GPU! * 4 = 256 effective
 DEFAULT_NUM_EPOCHS = 90
 DEFAULT_LR = 1e-3
 DEFAULT_CROP_SIZE = 224
