@@ -1,0 +1,38 @@
+name: TML
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - torchmetrics=0.11
+  - wandb
+  - ipython
+  - matplotlib
+  - jupyterlab
+  - pytorch=2.2.1
+  - torchvision=0.17.1
+  - torchaudio=2.2.1
+  - pytorch-cuda=12.1
+  - pytorch-lightning
+  - cudnn
+  - ca-certificates
+  - certifi
+  - openssl
+  - rich
+  - mamba
+  - captum=0.5
+  - einops=0.6
+  - seaborn
+  - pudb
+  - tqdm
+  - lime=0.2.0.1
+  - scikit-image=0.19.3
+  - timm=0.6.12
+  - ipywidgets
+  - pytest
+  - pip
+  - pip:
+    - cloudpickle==2.2.0
+    - submitit==1.4.5
+    - opencv-python-headless
