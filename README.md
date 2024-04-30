@@ -34,7 +34,7 @@ Traceback (most recent call last):
       output = fn(*args, **kwargs)
   TypeError: ClassificationLitModel.configure_gradient_clipping() got an unexpected keyword argument 'optimzer_idx'
 ~~~
-A brute force, but nevertheless viable solution is to edit library files and in:
+A brute force, but nevertheless viable solution is to edit the following file:
 ~~~ 
 "env_location/envs/TML/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
 ~~~ 
