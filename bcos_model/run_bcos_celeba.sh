@@ -3,7 +3,7 @@
 #SBATCH --qos=normal
 #SBATCH --gres=gpu:1
 #SBATCH --mem=24G
-#SBATCH --partition=student
+#SBATCH --partition=rtx2080
 #SBATCH --output="train_bcos_celeba.out"
 
 
