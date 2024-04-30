@@ -32,7 +32,7 @@ Traceback (most recent call last):
       call._call_lightning_module_hook(
     File "env_location/envs/TML/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
       output = fn(*args, **kwargs)
-  TypeError: ClassificationLitModel.configure_gradient_clipping() got an unexpected keyword argument 'optimzer_idx'
+  TypeError: ClassificationLitModel.configure_gradient_clipping() missing 1 required positional argument: 'optimizer_idx'
 ~~~
 A brute force solution, but nevertheless a viable one, is to edit the following file:
 ~~~ 
