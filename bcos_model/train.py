@@ -93,6 +93,11 @@ def get_parser(add_help=True):
         default=None,  # use args.experiment_name
         help="Override wandb exp. name. Default use --experiment_name",
     )
+    parser.add_argument(
+        "--wandb_entity",
+        default="",  # use args.experiment_name
+        help="Set wandb entity",
+    )
 
     # explanations logging
     parser.add_argument(

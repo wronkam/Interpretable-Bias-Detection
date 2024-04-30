@@ -8,7 +8,7 @@ DATA_ROOT = os.getenv("DATA_ROOT")
 
 # ImageNet path
 IMAGENET_PATH = os.getenv("IMAGENET_PATH") if os.getenv("IMAGENET_PATH") is not None else "../data/Imagenet"
-CELEBA_PATH = os.getenv("CELEBA_PATH") if os.getenv("CELEBA_PATH") is not None else "../data/celeba"
+CELEBA_PATH = os.getenv("CELEBA_PATH") if os.getenv("CELEBA_PATH") is not None else "../data/celebA"
 WATERBIRDS_PATH = os.getenv("WATERBIRDS_PATH") if os.getenv("WATERBIRDS_PATH") else "../data/waterbirds"
 
 # ---------------------------------------------

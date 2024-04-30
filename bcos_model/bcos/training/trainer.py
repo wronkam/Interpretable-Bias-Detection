@@ -318,6 +318,7 @@ def setup_loggers(args):
             name=args.wandb_name or args.experiment_name,
             save_dir=str(save_dir),
             project=args.wandb_project,
+            entity=args.wandb_entity,
             id=args.wandb_id,
         )
         loggers.append(wandb_logger)
