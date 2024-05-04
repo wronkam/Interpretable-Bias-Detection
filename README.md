@@ -16,6 +16,8 @@ Training scripts for both datasets are in associated model subdirectories.
 
 [Checkpoints](https://ujchmura-my.sharepoint.com/:f:/g/personal/michal_wronka_student_uj_edu_pl/EmJijtV__Q9BhGv-aBiHUdoBrJlAPszoTDqw8icyfOrQOQ?e=Xfyzeb) (requires UJ email).
 
+[B-cos wandb page](https://wandb.ai/wronkam/TML_interpretable_bias_detection/) 
+
 ---
 Issue with Bcos model:
 
