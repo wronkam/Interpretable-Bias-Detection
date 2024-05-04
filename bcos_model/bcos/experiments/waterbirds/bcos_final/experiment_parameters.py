@@ -18,7 +18,7 @@ from bcos.optim import LRSchedulerFactory, OptimizerFactory
 
 __all__ = ["CONFIGS"]
 
-NUM_CLASSES = 1_000
+NUM_CLASSES = 200
 
 # These are mainly based on the recipes from
 # https://github.com/pytorch/vision/blob/93723b481d1f6e/references/classification/README.md
