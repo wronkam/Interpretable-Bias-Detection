@@ -25,11 +25,11 @@ with open(file_name, "r") as csv_file:
     for row in csv_reader:
         id, file, y, split, place,place_f = row
         place_f = place_f.split('/')[1]
-        classez = int(file[:3])
+        classez = {'0':'landbird','1':'waterbird'}[y]
         dir,image = file.split('/')
         split = int(split)
         print(split_dir[split],split,file)
-        dest = os.path.join(root_dir,split_dir[split],dir)
+        dest = os.path.join(root_dir,split_dir[split],classez)
         os.makedirs(dest,exist_ok=True)
         shutil.copy(os.path.join(root_dir,file),os.path.join(dest,image))
 
