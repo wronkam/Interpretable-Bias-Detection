@@ -1026,7 +1026,18 @@ WATERBIRDS_CLASSES = [
     "landbirds",
     "waterbirds",
 ]
+
+# for use with experiment-1 dataset
+# CELEBA_CLASSES = [
+#     "not_blond",
+#     "blond",
+# ]
+
+# for use with experiment-2 dataset
 CELEBA_CLASSES = [
-    "not_blond",
+    "black",
     "blond",
+    'brown',
+    'gray',
+    'wearing_hat',
 ]
