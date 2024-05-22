@@ -1,4 +1,4 @@
-# prepare waterbirds dataset without background
+# prepare birds dataset without background
 
 import csv
 import os
@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 
 # dataset directory
-root_dir = os.path.join('.', 'data', 'waterbirds')
+root_dir = os.path.join('.', 'data', 'birds')
 file_name = os.path.join(root_dir, 'metadata.csv')
 split_dir = {0: 'train', 1: 'val', 2: 'test'}
 
@@ -60,7 +60,7 @@ with open(file_name, "r") as csv_file:
         img_data = np.uint8(img_data)
         im = Image.fromarray(img_data)
 
-        dest = os.path.join(root_dir, split_dir[split], dir)
+        dest = os.path.join(root_dir, dir)
         os.makedirs(dest, exist_ok=True)
         # save image
         im.save(os.path.join(dest, image))
