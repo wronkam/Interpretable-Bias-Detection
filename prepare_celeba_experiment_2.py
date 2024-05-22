@@ -63,9 +63,11 @@ with open(os.path.join(root_dir,'list_attr_celeba.csv'), "r") as csv_file:
             hair_black = -1
             hair_brown = -1
             hair_gray = -1
+            has_hat = -1
 
             if int(hat) == 1:
                 hair_color = 36
+                has_hat = 1
             elif int(blond) == 1:
                 hair_color = 10
                 hair_blond = 1
@@ -93,7 +95,7 @@ with open(os.path.join(root_dir,'list_attr_celeba.csv'), "r") as csv_file:
                 if not dry_run:
                     shutil.copy(filename, destination)
 
-                writer.writerow([id, hair_blond, hair_black, hair_brown, hair_gray, hat, split])
+                writer.writerow([id, hair_blond, hair_black, hair_brown, hair_gray, has_hat, split])
 
                 keyxd = f"blond_{hair_blond}_black_{hair_black}_brown_{hair_brown}_gray_{hair_gray},_hat_{hat}"
                 if split not in count.keys():
@@ -111,7 +113,7 @@ with open(os.path.join(root_dir,'list_attr_celeba.csv'), "r") as csv_file:
                 count[split]['Black_Hair'][hair_black] += 1
                 count[split]['Brown_Hair'][hair_brown] += 1
                 count[split]['Gray_Hair'][hair_gray] += 1
-                count[split]['Wears_Hat'][int(hat)] += 1
+                count[split]['Wears_Hat'][has_hat] += 1
 print(count)
 for k,v in count.items():
     print(k,split_dir[k],'-'*50,'total',sum([vv for kk, vv in v.items() if 'blond_' in kk]))
